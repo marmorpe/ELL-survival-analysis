@@ -1,0 +1,81 @@
+---
+title: "ELL_figures"
+author: "Martha Moreno"
+date: "17 de marzo de 2020"
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(root.dir="C:/Users/martha/Dropbox/ELs project final")
+source("marginal effects v1.R")
+source("reclas survival curves v2.R")
+source("dropout survival curves v3.R")
+
+```
+
+## Marginal effects of selected covariates in the probability of reclassifying out of ELL status
+
+- the marginal effect of being poor is significant and the gaps as compared to non-poor students is wider in schools with high ELL composition (ELLC). This is seen thorugh all grades of high school
+
+- there is a significant difference between schools with low and high ELLC
+
+- the marginal effect of being female is small as compared to whether a student is poor, but is significant in all grades except for 11th, where there the difference between males and females is virtually zero
+
+- female students start and end with an "advantage" over their male counterparts, but their marginal effect is negative during 10th grade
+
+- there is only significant gender difference in school with low and high ELLC by the beginning of high school
+
+- in general there is a negative marginal effect of being foreign born, and the gap is wider in shools with medium ELLC
+
+- these gaps are only significant between low and high ELLC school in the last 2 years of high school
+
+```{r}
+fig1
+```
+
+- all students present gaps as compared to their White peers
+
+- there is only one exception when it comes to Asian students in the last two years of high school, where there positive or no significant differences with their White peers
+
+- in general, larger gaps are seen in schools with lowor medium ELLC
+
+- Black students present the larger gaps when compared to their White peers, in general these gaps are wider in schools with low and medium ELLC 
+
+```{r}
+fig2
+```
+
+## Effects of ELL composition by profiles of students
+## Reclassification
+
+The idea of presenting these graphs is that they shed light on "profiles" of students that are likely to attend NYC schools. In this sense, though the previous graphs show a side of the analysis when averything else is held "constant", we want to show the paths of students who are foreign born, female and most likely recent arrival (not ELL previous to 9th grade).
+
+- fig 3 shows the probability of not reclassifying out of ELL status through time
+
+- for students of all races in our analysis, being in high ELLC schools is associated with higher probabilities of not reclassifying at the beginning of high school
+
+- this effect fades away thorugh time, as it seems that the differences between high and low and medium disappear
+
+
+```{r}
+fig3
+```
+
+## Effects of ELL composition by profiles of students
+## Dropout
+
+- fig 4 show the probability of not dropping out through time. The curves in the left panels represent a student with the previous characteristics mentioned plus the fact that she reclassifies in 9th grade. The left panels show the same student who reclassifies by 12th grade
+
+- for students reclassifying early, being in schools with high ELLC is associated with lower probabilities staying in school 
+
+- for students reclassifying late, the differences due to ELLC are less pronounced or they completely disappear 
+
+- there are important differences between students who reclassify earlier and those who reclassify late. Those who spend more time as ELL have higher chances of staying in school
+
+```{r}
+fig4
+```
