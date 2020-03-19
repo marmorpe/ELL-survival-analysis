@@ -11,6 +11,8 @@ output:
 
 ## Marginal effects of selected covariates in the probability of reclassifying out of ELL status
 
+
+
 - the marginal effect of being poor is significant and the gaps as compared to non-poor students is wider in schools with high ELL composition (ELLC). This is seen thorugh all grades of high school
 
 - there is a significant difference between schools with low and high ELLC
@@ -50,7 +52,11 @@ fig2
 ## Effects of ELL composition by profiles of students
 ## Reclassification
 
-The idea of presenting these graphs is that they shed light on "profiles" of students that are likely to attend NYC schools. In this sense, though the previous graphs show a side of the analysis when averything else is held "constant", we want to show the paths of students who are foreign born, female and most likely recent arrival (not ELL previous to 9th grade).
+The idea of presenting these graphs is that they provide extra information about certain "profile" of student that is likely to attend a NYC school. For this purpose we select a profile that has certain characteristics and then we calculate their conditional probailities thorugh time for our two events: reclassification and dropout. In this sense, though the previous analysis shows the isolated relationships of our covariates when everything else is held "constant" though time and for schools with different ELLC, we want to show the paths of students who are most likely to attend the schools we are analyzing: Those who are foreign-born (77% of our sample), female (around half our sample), have average previous test scores and are most likely recent arrivals (not ELL previous to 9th grade). We believe this way of showing our results has two main advantages: 
+
+1) rather than looking at isolated effects we are able to analyze what happens with students who are likely attending our schools, 
+
+2) we do not make assumptions about how an "average" student is 
 
 - fig 3 shows the probability of not reclassifying out of ELL status through time
 
