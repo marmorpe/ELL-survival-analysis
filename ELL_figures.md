@@ -96,27 +96,43 @@ fig4.b
 
 # more tests for dropout model
 
-test 1: using long data and an interaction between ell composition and race
+test 1: using long data no interactions
 
-test 2: using wide data and an interaction between ell composition and race
+test 2: using wide data no interactions
+
+test 3: using long data and an interaction between ell composition and race
+
+test 4: using wide data and an interaction between ell composition and race
 
 test 3: using wide data and an interaction between ell composition and reclassification time
 
 
 ```r
-fig4.long
+fig4.long.noint
 ```
 
 ![](ELL_figures_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 ```r
-fig4.wide
+fig4.wide.noint
 ```
 
 ![](ELL_figures_files/figure-html/unnamed-chunk-5-2.png)<!-- -->
 
 ```r
-fig4.wide.ellxreclas
+fig4.long
 ```
 
 ![](ELL_figures_files/figure-html/unnamed-chunk-5-3.png)<!-- -->
+
+```r
+fig4.wide
+```
+
+![](ELL_figures_files/figure-html/unnamed-chunk-5-4.png)<!-- -->
+
+```r
+fig4.wide.ellxreclas
+```
+
+![](ELL_figures_files/figure-html/unnamed-chunk-5-5.png)<!-- -->
