@@ -2,16 +2,14 @@
 title: "ELL_figures"
 author: "Martha Moreno"
 date: "17 de marzo de 2020"
-output: 
+output:
   html_document:
-    keep_md: true
+    keep_md: yes
 ---
 
 
 
 ## Marginal effects of selected covariates in the probability of reclassifying out of ELL status
-
-
 
 - the marginal effect of being poor is significant and the gaps as compared to non-poor students is wider in schools with high ELL composition (ELLC). This is seen thorugh all grades of high school
 
@@ -52,11 +50,11 @@ fig2
 ## Effects of ELL composition by profiles of students
 ## Reclassification
 
-The idea of presenting these graphs is that they provide extra information about certain "profile" of student that is likely to attend a NYC school. For this purpose we select a profile that has certain characteristics and then we calculate their conditional probailities thorugh time for our two events: reclassification and dropout. In this sense, though the previous analysis shows the isolated relationships of our covariates when everything else is held "constant" though time and for schools with different ELLC, we want to show the paths of students who are most likely to attend the schools we are analyzing: Those who are foreign-born (77% of our sample), female (around half our sample), have average previous test scores and are most likely recent arrivals (not ELL previous to 9th grade). We believe this way of showing our results has two main advantages: 
+The idea of presenting these graphs is that they provide extra information about certain "profile" of student that is likely to attend a NYC school. For this purpose we select a profile that has certain characteristics and then we calculate their conditional probailities thorugh time for our two events: reclassification and dropout. In this sense, though the previous analysis shows the isolated relationships of our covariates when everything else is held "constant" though time and for schools with different ELLC, we want to show the paths of students who are most likely to attend the schools we are analyzing: Those who are foreign-born (77% of our sample), female (around half our sample), have average previous test scores and are most likely recent arrivals (not ELL previous to 9th grade). We believe this way of showing our results has two main advantages:
 
-1) rather than looking at isolated effects we are able to analyze what happens with students who are likely attending our schools, 
+1) rather than looking at isolated effects we are able to analyze what happens with students who are likely attending our schools,
 
-2) we do not make assumptions about how an "average" student is 
+2) we do not make assumptions about how an "average" student is
 
 - fig 3 shows the probability of not reclassifying out of ELL status through time
 
@@ -85,7 +83,40 @@ fig3
 
 
 ```r
-fig4
+fig4.a
 ```
 
 ![](ELL_figures_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+
+```r
+fig4.b
+```
+
+![](ELL_figures_files/figure-html/unnamed-chunk-4-2.png)<!-- -->
+
+# more tests for dropout model
+
+test 1: using long data and an interaction between ell composition and race
+
+test 2: using wide data and an interaction between ell composition and race
+
+test 3: using wide data and an interaction between ell composition and reclassification time
+
+
+```r
+fig4.long
+```
+
+![](ELL_figures_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+
+```r
+fig4.wide
+```
+
+![](ELL_figures_files/figure-html/unnamed-chunk-5-2.png)<!-- -->
+
+```r
+fig4.wide.ellxreclas
+```
+
+![](ELL_figures_files/figure-html/unnamed-chunk-5-3.png)<!-- -->
